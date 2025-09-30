@@ -1,4 +1,4 @@
-// App.jsx
+
 import React, { useRef, useState, useEffect } from "react";
 import { GoogleGenAI } from "@google/genai"; 
 import './index.css';
@@ -89,7 +89,7 @@ INPUT: Here is a drawing represented as JSON (either stroke arrays of {x,y}
   - General: semantic HTML, inline CSS and JS only, mobile-first responsive, 
   accessible where appropriate, no external assets or libraries. 3. Include inline comments mapping code sections to drawing features. OUTPUT RULE: - Return ONLY the complete HTML file text (no extra text outside the HTML file). The top HTML comment may include identification and mapping. Now generate the single-file HTML implementing the UI based on the drawing and example type "{{EXAMPLE_TYPE}}".
 
-       ` // keep your existing prompt
+       ` 
       });
       console.log(res.text);
       setResponse(res.text);
@@ -110,7 +110,7 @@ INPUT: Here is a drawing represented as JSON (either stroke arrays of {x,y}
 
   return (
     <div className="AppContainer">
-      {/* Left side: Canvas */}
+   
       <div className="canvas-section">
         <h2>React Drawing Canvas</h2>
         <canvas
@@ -136,7 +136,7 @@ INPUT: Here is a drawing represented as JSON (either stroke arrays of {x,y}
         </div>
       </div>
 
-      {/* Right side: Preview */}
+    
       <div className="preview-section">
         <h2>Preview</h2>
         <iframe
