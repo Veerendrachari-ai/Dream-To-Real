@@ -1,0 +1,111 @@
+/* index.css */
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* App Container */
+.AppContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 30px;
+}
+
+/* Canvas Section */
+.canvas-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.canvas-section h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #1f2937;
+}
+
+canvas {
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: crosshair;
+  background-color: #fff;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+button {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #4338ca;
+}
+
+button:disabled {
+  background-color: #a5b4fc;
+  cursor: not-allowed;
+}
+
+/* Select dropdown */
+.css-yk16xz-control {
+  min-width: 200px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  box-shadow: none;
+}
+
+.css-yk16xz-control:hover {
+  border-color: #4f46e5;
+}
+
+/* Preview Section */
+.preview-section {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.preview-section h2 {
+  font-size: 1.5rem;
+  color: #1f2937;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background-color: #fff;
+}
