@@ -3,7 +3,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { GoogleGenAI } from "@google/genai"; 
 import './index.css';
 import Select from "react-select";
-  const ai = new GoogleGenAI({apiKey:"AIzaSyAwjsIxe-Whh42pUj5-Bv5BwURHlmDI5M4"});
+  const ai = new GoogleGenAI({apiKey:"KEY"});
 
 
 export default function App() {
